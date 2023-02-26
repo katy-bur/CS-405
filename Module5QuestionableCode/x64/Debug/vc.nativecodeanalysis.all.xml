@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\KateBurkova\source\repos\Module5QuestionableCode\</FILEPATH>
+      <FILENAME>Module5QuestionableCode.cpp</FILENAME>
+      <LINE>113</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>6282</DEFECTCODE>
+    <DESCRIPTION>Incorrect operator.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>100</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

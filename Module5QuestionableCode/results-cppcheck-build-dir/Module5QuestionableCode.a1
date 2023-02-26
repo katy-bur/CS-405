@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="13527485668870028117">
+        <error id="assignmentInAssert" severity="warning" msg="Assert statement modifies &apos;z&apos;." verbose="Variable &apos;z&apos; is modified inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="113" column="14"/>
+            <symbol>z</symbol>
+        </error>
+        <error id="uselessAssignmentPtrArg" severity="warning" msg="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" verbose="Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?" cwe="398" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="95" column="5"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="42" column="5"/>
+        </error>
+        <error id="returnNonBoolInBooleanFunction" severity="style" msg="Non-boolean value returned from function returning bool" verbose="Non-boolean value returned from function returning bool" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="84" column="5"/>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;C::is_type&apos;" verbose="Unused private function: &apos;C::is_type&apos;" cwe="398" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="14" column="10"/>
+            <symbol>C::is_type</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;tok&apos; is redundant or there is possible null pointer dereference: tok." verbose="Either the condition &apos;tok&apos; is redundant or there is possible null pointer dereference: tok." cwe="476" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="95" column="11" info="Null pointer dereference"/>
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="94" column="12" info="Assuming that condition &apos;tok&apos; is not redundant"/>
+            <symbol>tok</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;buf&apos; can be reduced." verbose="The scope of the variable &apos;buf&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="47" column="9"/>
+            <symbol>buf</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x&apos; shadows outer variable" verbose="Local variable &apos;x&apos; shadows outer variable" cwe="398" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="119" column="13" info="Shadow variable"/>
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="103" column="9" info="Shadowed declaration"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;y&apos; shadows outer variable" verbose="Local variable &apos;y&apos; shadows outer variable" cwe="398" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="120" column="13" info="Shadow variable"/>
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="104" column="9" info="Shadowed declaration"/>
+            <symbol>y</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;z&apos; shadows outer variable" verbose="Local variable &apos;z&apos; shadows outer variable" cwe="398" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="121" column="13" info="Shadow variable"/>
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="105" column="9" info="Shadowed declaration"/>
+            <symbol>z</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;buf[count]&apos; is assigned a value that is never used." verbose="Variable &apos;buf[count]&apos; is assigned a value that is never used." cwe="563" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="49" column="20"/>
+            <symbol>buf[count]</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;tok&apos; is assigned a value that is never used." verbose="Variable &apos;tok&apos; is assigned a value that is never used." cwe="563" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="95" column="9"/>
+            <symbol>tok</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;x&apos; is assigned a value that is never used." verbose="Variable &apos;x&apos; is assigned a value that is never used." cwe="563" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="103" column="9"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;y&apos; is assigned a value that is never used." verbose="Variable &apos;y&apos; is assigned a value that is never used." cwe="563" file0="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp">
+            <location file="C:\Users\KateBurkova\source\repos\Module5QuestionableCode\Module5QuestionableCode.cpp" line="104" column="9"/>
+            <symbol>y</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp:39:6" call-funcname="foo" call-argnr="1" file="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp" line="130" col="8" call-argexpr="&amp;c" call-argvaluetype="7" call-argvalue="4"/>  </FileInfo>
+  <FileInfo check="Class">
+<class name="C" file="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp" line="11" col="1" hash="7959227610497322119"/>
+<class name="MySpecialType" file="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp" line="28" col="1" hash="4620522867220852359"/>
+<class name="Token" file="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp" line="87" col="1" hash="5755436925175674289"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp:39:6" my-argnr="1" my-argname="a" file="C:/Users/KateBurkova/source/repos/Module5QuestionableCode/Module5QuestionableCode.cpp" line="42" col="6" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="is_type" lineNumber="14"/>
+    <functiondecl functionName="DontThrow" lineNumber="33"/>
+    <functiondecl functionName="foo" lineNumber="39"/>
+    <functiondecl functionName="work_with_arrays" lineNumber="45"/>
+    <functiondecl functionName="do_something_useless" lineNumber="52"/>
+    <functiondecl functionName="vector_test" lineNumber="63"/>
+    <functiondecl functionName="my_function" lineNumber="81"/>
+    <functiondecl functionName="next" lineNumber="89"/>
+    <functiondecl functionName="foo" lineNumber="92"/>
+    <functiondecl functionName="main" lineNumber="100"/>
+    <functioncall functionName="A"/>
+    <functioncall functionName="assert"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="begin"/>
+    <functioncall functionName="c"/>
+    <functioncall functionName="catch"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="erase"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="foo"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="iter"/>
+    <functioncall functionName="next"/>
+    <functioncall functionName="noexcept"/>
+    <functioncall functionName="push_back"/>
+    <functioncall functionName="tok"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="vector_test"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="work_with_arrays"/>
+    <functioncall functionName="z"/>
+  </FileInfo>
+</analyzerinfo>

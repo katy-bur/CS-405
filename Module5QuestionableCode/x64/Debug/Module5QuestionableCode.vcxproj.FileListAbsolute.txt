@@ -1,0 +1,3 @@
+C:\Users\KateBurkova\source\repos\Module5QuestionableCode\x64\Debug\Module5QuestionableCode.exe
+C:\Users\KateBurkova\source\repos\Module5QuestionableCode\x64\Debug\Module5QuestionableCode.exe.lastcodeanalysissucceeded
+C:\Users\KateBurkova\source\repos\Module5QuestionableCode\x64\Debug\NativeCodeAnalysis.read.1.tlog
